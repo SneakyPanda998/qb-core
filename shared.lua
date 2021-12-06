@@ -692,93 +692,93 @@ QBShared.Gangs = {
 QBShared.ForceJobDefaultDutyAtLogin = true -- true: Force duty state to jobdefaultDuty | false: set duty state from database last saved
 QBShared.Jobs = {
 	['unemployed'] = {
-		label = 'Civilian',
+		label = 'Sivil',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Freelancer',
-                payment = 10
+                name = 'Naver',
+                payment = 150
             },
         },
 	},
 	['police'] = {
-		label = 'Law Enforcement',
+		label = 'Politi',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Student',
+                payment = 250
             },
 			['1'] = {
-                name = 'Officer',
-                payment = 75
+                name = 'Betjent',
+                payment = 500
             },
 			['2'] = {
-                name = 'Sergeant',
-                payment = 100
+                name = 'Delta',
+                payment = 1200
             },
 			['3'] = {
-                name = 'Lieutenant',
-                payment = 125
+                name = 'Ledelsen',
+                payment = 1050
             },
 			['4'] = {
-                name = 'Chief',
+                name = 'Direktør',
 				isboss = true,
-                payment = 150
+                payment = 1500
             },
         },
 	},
 	['ambulance'] = {
-		label = 'EMS',
+		label = 'Ambulanse',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Student',
+                payment = 400
             },
 			['1'] = {
-                name = 'Paramedic',
-                payment = 75
+                name = 'Lege',
+                payment = 600
             },
 			['2'] = {
-                name = 'Doctor',
-                payment = 100
+                name = 'Kirurg',
+                payment = 800
             },
 			['3'] = {
-                name = 'Surgeon',
-                payment = 125
+                name = 'StasjonsSjef',
+                payment = 1050
             },
 			['4'] = {
-                name = 'Chief',
+                name = 'Direktør',
 				isboss = true,
-                payment = 150
+                payment = 1500
             },
         },
 	},
 	['realestate'] = {
-		label = 'Real Estate',
+		label = 'EiendomsMegler',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Student',
+                payment = 200
             },
 			['1'] = {
-                name = 'House Sales',
-                payment = 75
+                name = 'Hus Selger',
+                payment = 400
             },
 			['2'] = {
-                name = 'Business Sales',
-                payment = 100
+                name = 'Business Selger',
+                payment = 600
             },
 			['3'] = {
-                name = 'Broker',
-                payment = 125
+                name = 'Selger',
+                payment = 850
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Sjef',
 				isboss = true,
-                payment = 150
+                payment = 1200
             },
         },
 	},
@@ -787,62 +787,52 @@ QBShared.Jobs = {
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Student',
+                payment = 150
             },
 			['1'] = {
-                name = 'Driver',
-                payment = 75
+                name = 'Sjåfør',
+                payment = 250
             },
 			['2'] = {
-                name = 'Event Driver',
-                payment = 100
+                name = 'Event Sjåfør',
+                payment = 400
             },
 			['3'] = {
-                name = 'Sales',
-                payment = 125
+                name = 'Selger',
+                payment = 600
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Sjef',
 				isboss = true,
-                payment = 150
+                payment = 850
             },
         },
 	},
-     ['bus'] = {
-		label = 'Bus',
-		defaultDuty = true,
-		grades = {
-            ['0'] = {
-                name = 'Driver',
-                payment = 50
-            },
-		},
-	},
 	['cardealer'] = {
-		label = 'Vehicle Dealer',
+		label = 'OsloBilforhandler',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Student',
+                payment = 200
             },
 			['1'] = {
-                name = 'Showroom Sales',
-                payment = 75
+                name = 'Showroom Selger',
+                payment = 350
             },
 			['2'] = {
-                name = 'Business Sales',
-                payment = 100
+                name = 'Business Selger',
+                payment = 450
             },
 			['3'] = {
-                name = 'Finance',
-                payment = 125
+                name = 'Finans Avdelingen',
+                payment = 600
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Sjef',
 				isboss = true,
-                payment = 150
+                payment = 1000
             },
         },
 	},
@@ -851,25 +841,64 @@ QBShared.Jobs = {
 		defaultDuty = true,
 		grades = {
             ['0'] = {
-                name = 'Recruit',
-                payment = 50
+                name = 'Lærling',
+                payment = 200
             },
 			['1'] = {
-                name = 'Novice',
-                payment = 75
+                name = 'Ny Mekaniker',
+                payment = 350
             },
 			['2'] = {
-                name = 'Experienced',
-                payment = 100
+                name = 'Mekaniker',
+                payment = 400
             },
 			['3'] = {
-                name = 'Advanced',
-                payment = 125
+                name = 'Erfaren Mekaniker',
+                payment = 450
             },
 			['4'] = {
-                name = 'Manager',
+                name = 'Sjef',
 				isboss = true,
-                payment = 150
+                payment = 1000
+            },
+        },
+	},
+	['stovinds'] = {
+		label = 'Støvinds Verksted',
+		defaultDuty = true,
+		grades = {
+            ['0'] = {
+                name = 'Lærling',
+                payment = 250
+            },
+			['1'] = {
+                name = 'Ansatt',
+                payment = 300
+            },
+			['2'] = {
+                name = 'Posten',
+                payment = 250
+            },
+			['3'] = {
+                name = 'Mekaniker',
+                payment = 350
+            },
+			['4'] = {
+                name = 'Sjåfør',
+                payment = 400
+            },
+			['5'] = {
+                name = 'Tungbilsjåfør',
+                payment = 400
+            },
+			['6'] = {
+                name = 'Daglig Leder',
+                payment = 500
+            },
+			['7'] = {
+                name = 'Sjef',
+				isboss = true,
+                payment = 550
             },
         },
 	},
@@ -924,7 +953,7 @@ QBShared.Jobs = {
         },
 	},
 	['garbage'] = {
-		label = 'Garbage',
+		label = 'Søppel',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
@@ -934,7 +963,7 @@ QBShared.Jobs = {
         },
 	},
 	['vineyard'] = {
-		label = 'Vineyard',
+		label = 'Vinegård',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
@@ -944,7 +973,7 @@ QBShared.Jobs = {
         },
 	},
 	['hotdog'] = {
-		label = 'Hotdog',
+		label = 'Pølse Selger',
 		defaultDuty = true,
 		grades = {
             ['0'] = {
